@@ -41,7 +41,7 @@ export default function RootLayout() {
         <Stack.Screen name="pages/payment/payment" options={{title:"PEMBAYARAN"}}/>
         <Stack.Screen name="pages/qris/qris" options={{title:"QRIS"}}/>
         <Stack.Screen name="pages/history/index" options={{title:"RIWAYAT"}}/>
-        <Stack.Screen name="pages/success/success" options={{title:"SUKSES"}}/>
+        <Stack.Screen name="pages/success/success" options={{headerShown:false}}/>
         <Stack.Screen name="pages/profile/profile" options={{title:"PROFIL"}}/>
         <Stack.Screen name="pages/transactionDetail/transactionDetail" options={{title:"DETAIL TRANSAKSI"}}/>
         <Stack.Screen name="pages/maintenance/maintenance" options={{title:""}}/>

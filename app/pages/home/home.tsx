@@ -1,7 +1,7 @@
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from "react-native";
 import HomeAppBar from "./components/HomeAppBar/HomeAppBar";
 import HomePaymentList from "./components/HomePaymentList";
-import HomeFeeds from "./components/HomeFeeds";
+import HomeFeeds from "./components/HomeFeeds/HomeFeeds";
 
 export default function HomePage() {
     return (

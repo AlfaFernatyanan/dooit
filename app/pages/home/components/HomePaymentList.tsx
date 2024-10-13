@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 export default function HomePaymentList() {
     return (
         <View>
-            <Text>Payment List</Text>
+            <Text style = {styles.text}>Payment List</Text>
             <View style={styles.grid}>
                 <CategoryButton icon={require("@/assets/icons/bpjs.png")} title="BPJS" uri="/pages/bpjs/bpjs" />
                 <CategoryButton icon={require("@/assets/icons/listrik.png")} title="LISTRIK" uri="/pages/listrik/listrik" />
@@ -18,6 +18,13 @@ export default function HomePaymentList() {
 const styles = StyleSheet.create({
     grid:{
         flex:4,
-        flexDirection:"row"
+        flexDirection:"row",
+        marginVertical: 10
+    },
+    text: {
+        fontWeight: "700",
+        fontSize : 18,
+        color : "#030319",
+        margin : 5
     }
 })

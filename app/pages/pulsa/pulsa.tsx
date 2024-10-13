@@ -1,23 +1,25 @@
 import { StyleSheet, Text, View } from "react-native";
+import InputPhoneField from "./inputPhoneField";
+import ProviderLogo from "./providerLogo";
+import OptionSection from "./optionSection";
+import PulsaList from "./pulsaList";
 
 export default function PulsaPage() {
     return (
-        <View style={styles.headline}>
-            <Text style={styles.title}>Pulsa Page</Text>
+        <View style={styles.container}>
+            <ProviderLogo />
+            <InputPhoneField />
+            <OptionSection />
+            <PulsaList />
+
         </View>
     );
 }
 
 const styles = StyleSheet.create({
-    headline: {
-        fontWeight: 'bold',
-        justifyContent: 'center',
-        alignContent: 'center',
-        fontSize: 18,
-        marginTop: 0,
-        height: '100%',
-    },
-    title: {
-        textAlign: 'center',
-    }
+   container :{
+    padding : 16,
+    backgroundColor: "white",
+    height: "100%"
+   }
 });
