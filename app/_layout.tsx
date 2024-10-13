@@ -39,13 +39,18 @@ export default function RootLayout() {
         <Stack.Screen name="pages/home/home" options={{title:"HALAMAN UTAMA"}}/>
         <Stack.Screen name="pages/pin/pin" options={{title:"PIN"}}/>
         <Stack.Screen name="pages/payment/payment" options={{title:"PEMBAYARAN"}}/>
+        <Stack.Screen name="pages/payment/paymentPulsa" options={{title:"PEMBAYARAN"}}/>
+        <Stack.Screen name="pages/payment/paymentListrik" options={{title:"PEMBAYARAN"}}/>
+        <Stack.Screen name="pages/payment/paymentBpjs" options={{title:"PEMBAYARAN"}}/>
         <Stack.Screen name="pages/qris/qris" options={{title:"QRIS"}}/>
         <Stack.Screen name="pages/history/index" options={{title:"RIWAYAT"}}/>
         <Stack.Screen name="pages/success/success" options={{headerShown:false}}/>
+        <Stack.Screen name="pages/success/successPulsa" options={{headerShown:false}}/>
+        <Stack.Screen name="pages/success/successBpjs" options={{headerShown:false}}/>
+        <Stack.Screen name="pages/success/successListrik" options={{headerShown:false}}/>
         <Stack.Screen name="pages/profile/profile" options={{title:"PROFIL"}}/>
         <Stack.Screen name="pages/transactionDetail/transactionDetail" options={{title:"DETAIL TRANSAKSI"}}/>
         <Stack.Screen name="pages/maintenance/maintenance" options={{title:""}}/>
-     
       </Stack>
     </ThemeProvider>
   );

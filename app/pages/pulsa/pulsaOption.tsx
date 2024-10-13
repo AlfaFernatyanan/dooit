@@ -15,7 +15,7 @@ export default function PulsaOption(props:PulsaOptionProps) {
             <Text style={styles.textPulsa}>{props.pulsa}</Text>
             <View>
                 <Text style={styles.textPrice}>Price</Text>
-                <Text style={styles.textAmount}>Rp.{props.pulsa}</Text>
+                <Text style={styles.textAmount}>Rp.{props.amount}</Text>
             </View>
         </TouchableOpacity>
     );

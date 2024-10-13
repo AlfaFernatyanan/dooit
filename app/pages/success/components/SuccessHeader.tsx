@@ -8,6 +8,8 @@ export default function SuccessHeader() {
     );
 }
 
+
+
 const styles = StyleSheet.create({
     title: {
         marginTop:50,

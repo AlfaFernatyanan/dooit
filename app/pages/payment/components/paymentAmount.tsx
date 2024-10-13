@@ -1,13 +1,18 @@
 import { StyleSheet, Text, View } from "react-native";
 
-export default function PaymentAmount() {
+type PaymentAmountProps = {
+    amount: string
+    totalPayment: string
+}
+
+export default function PaymentAmount(props: PaymentAmountProps) {
     return (
         <View style={styles.container}>
 
-            <Text style={styles.amount}>10000</Text>
+            <Text style={styles.amount}>{props.amount}</Text>
             <View style={styles.wrapper}>
                 <Text style={styles.wrapperText}>
-                    Total Payment Rp 11.500 has been applied
+                    Total Payment {props.totalPayment} has been applied
                 </Text>
             </View>
         </View>

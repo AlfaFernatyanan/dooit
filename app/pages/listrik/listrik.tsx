@@ -1,23 +1,25 @@
 import { StyleSheet, Text, View } from "react-native";
+import InputListrikField from "./inputListrikField";
+import ListrikOption from "./listrikOption";
+import ListrikList from "./listrikList";
 
 export default function ListrikPage() {
     return (
-        <View style={styles.headline}>
-            <Text style={styles.title}>Listrik Page</Text>
-        </View>
+        <View style={styles.container}>
+            <InputListrikField/>
+           <ListrikList/>
+            <Text style={styles.title}></Text>
+        </View> 
     );
 }
 
 const styles = StyleSheet.create({
-    headline: {
-        fontWeight: 'bold',
-        justifyContent: 'center',
-        alignContent: 'center',
-        fontSize: 18,
-        marginTop: 0,
-        height: '100%',
-    },
-    title: {
-        textAlign: 'center',
-    }
+   container:{
+    padding : 16,
+    backgroundColor: "white",
+    height: "100%"
+   },
+   title:{
+
+   }
 });

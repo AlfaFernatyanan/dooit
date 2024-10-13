@@ -7,11 +7,11 @@ export default function PulsaList() {
         <SafeAreaView>
             <View style={styles.container} >
                 <ScrollView>
-                    <PulsaOption pulsa="5000" amount="6500" onPress={() => router.navigate("/pages/payment/payment")}/>
-                    <PulsaOption pulsa="5000" amount="6500" onPress={() => router.navigate("/pages/payment/payment")}/>
-                    <PulsaOption pulsa="5000" amount="6500" onPress={() => router.navigate("/pages/payment/payment")}/>
-                    <PulsaOption pulsa="5000" amount="6500" onPress={() => router.navigate("/pages/payment/payment")}/>
-                    <PulsaOption pulsa="5000" amount="6500" onPress={() => router.navigate("/pages/payment/payment")}/>
+                    <PulsaOption pulsa="5.000" amount="6.500" onPress={() => router.navigate("/pages/payment/paymentPulsa")}/>
+                    <PulsaOption pulsa="10.000" amount="11.500" onPress={() => router.navigate("/pages/payment/paymentPulsa")}/>
+                    <PulsaOption pulsa="20.000" amount="21.500" onPress={() => router.navigate("/pages/payment/paymentPulsa")}/>
+                    <PulsaOption pulsa="50.000" amount="51.500" onPress={() => router.navigate("/pages/payment/paymentPulsa")}/>
+                    <PulsaOption pulsa="100.000" amount="101.500" onPress={() => router.navigate("/pages/payment/paymentPulsa")}/>
                 </ScrollView>
             </View>
         </SafeAreaView>

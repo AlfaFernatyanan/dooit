@@ -1,22 +1,31 @@
 import { router } from "expo-router";
-import { Image, ImageBackground, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, ImageBackground, ImageSourcePropType, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-export default function SuccessBody() {
+type SuccessBodyProps ={
+    icon: ImageSourcePropType | undefined;
+description : string,
+paymentAmount : string,
+operatorDescription: string,
+operatorText: string,
+secondTitle : string
+}
+
+export default function SuccessBody(props : SuccessBodyProps) {
     return (
         <ImageBackground resizeMode="stretch" source={require("@/assets/images/Receipt.png")} style={styles.container}>
             <Image style={styles.iconSuccess} source={require("@/assets/images/IconSuccess.png")} />
             <Text style={styles.title}>Payment Success</Text>
-            <Text style={styles.description}>Your payment for Paket Data Telkomsel has been successfully done</Text>
+            <Text style={styles.description}>Your payment for {props.description} has been successfully done</Text>
             <Text style={styles.paymentText}>Total Payment</Text>
-            <Text style={styles.paymentAmount}>Rp 11.500</Text>
+            <Text style={styles.paymentAmount}>Rp {props.paymentAmount}</Text>
 
             <View style={styles.operatorContainer} >
-                <Text style={styles.operatorDescription}>Payment for</Text>
+                <Text style={styles.operatorDescription}>{props.operatorDescription}</Text>
                 <View style={styles.operatorWrapper}>
-                    <Image style={styles.operatorIcon} source={require("@/assets/images/telkomsel.png")} />
+                    <Image style={styles.operatorIcon} source={props.icon} />
                     <View>
-                        <Text style={styles.operatorText}>Paket Data 10000</Text>
-                        <Text style={styles.date}>Oct, 7 2024 - 3:02 PM</Text>
+                        <Text style={styles.operatorText}>{props.operatorText}</Text>
+                        <Text style={styles.date}>{props.secondTitle}</Text>
                     </View>
                 </View>
             </View>

@@ -1,14 +1,20 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, ImageSourcePropType, StyleSheet, Text, View } from "react-native";
 
-export default function PaymentLogo() {
+type PaymentLogoProps = {
+    source: ImageSourcePropType | undefined
+    title : string
+    date : string
+}
+
+export default function PaymentLogo(props:PaymentLogoProps) {
     return (
         <View style={styles.container}>
              <Image
-                source={require("@/assets/images/telkomsel.png")}
+                source={props.source}
                 style={styles.image}
             />
-            <Text style={styles.title}>Paket Data</Text>
-            <Text style={styles.date}>Payment on Oct 6, 2024</Text>
+            <Text style={styles.title}>{props.title}</Text>
+            <Text style={styles.date}>{props.date}</Text>
         </View>
     );
 }

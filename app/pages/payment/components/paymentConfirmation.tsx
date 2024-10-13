@@ -1,7 +1,11 @@
 import { router } from "expo-router";
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { GestureResponderEvent, Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-export default function PaymentConfirmation() {
+type PaymentConfirmationProps = {
+    onPress?: ((event: GestureResponderEvent) => void) | undefined;
+}
+
+export default function PaymentConfirmation(props : PaymentConfirmationProps) {
     return (
         <View style={styles.container}>
 
@@ -26,7 +30,7 @@ export default function PaymentConfirmation() {
 
             </View>
             <TouchableOpacity
-                onPress={() => router.navigate("/pages/success/success")}
+                onPress={props.onPress}
                 style={styles.buttonConfirm} >
                 <Text style={styles.textButtonConfirm}>{"Proceed to Pay"}</Text>
             </TouchableOpacity>
