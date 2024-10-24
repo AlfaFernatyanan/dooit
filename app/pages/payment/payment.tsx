@@ -2,6 +2,7 @@ import { GestureResponderEvent, ImageSourcePropType, StyleSheet, Text, View } fr
 import PaymentLogo from "./components/paymentLogo";
 import PaymentAmount from "./components/paymentAmount";
 import PaymentConfirmation from "./components/paymentConfirmation";
+import Pin from "../pin/pin";
 
 
 type PaymentProps = {
@@ -23,6 +24,7 @@ export default function Payment(props:PaymentProps) {
             />
             <PaymentAmount amount={props.amount} totalPayment={props.totalPayment}/>
             <PaymentConfirmation onPress={props.onPress}/>
+            
         </View>
     );
 }

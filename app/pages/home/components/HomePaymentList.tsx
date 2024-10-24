@@ -9,7 +9,7 @@ export default function HomePaymentList() {
                 <CategoryButton icon={require("@/assets/icons/bpjs.png")} title="BPJS" uri="/pages/bpjs/bpjs" />
                 <CategoryButton icon={require("@/assets/icons/listrik.png")} title="LISTRIK" uri="/pages/listrik/listrik" />
                 <CategoryButton icon={require("@/assets/icons/pulsa.png")} title="PULSA" uri="/pages/pulsa/pulsa" />
-                <CategoryButton icon={require("@/assets/icons/more.png")} title="MORE" uri="/pages/maintenance/maintenance" />
+                <CategoryButton icon={require("@/assets/icons/more.png")} title="MORE" uri="/pages/pin/pin" />
             </View>
         </View>
     )

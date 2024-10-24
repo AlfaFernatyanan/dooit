@@ -1,9 +1,11 @@
 import { StyleSheet, Text, View } from "react-native";
+import Pin from "../pin/pin";
 
 export default function QrisPage() {
     return (
         <View style={styles.headline}>
-            <Text style={styles.title}>Qris Page</Text>
+            <Pin/>
+            {/* <Text style={styles.title}>Qris Page</Text> */}
         </View>
     );
 }
